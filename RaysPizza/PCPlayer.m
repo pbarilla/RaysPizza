@@ -111,7 +111,7 @@
  NW NO NE       to do this we should take the map, and move the player direction as follows.
  WE ** EA       ** = (5,5), NO = (5,4), NE = (6,4), EA = (6,5), SE = (6, 6), SO = (5,6), SW = (4,6), WE = (4,5), NW = (4,4)
  SW SO SE
-  
+ 
 **/
 
 -(BOOL)checkForCollisonMoving:(int)PlayerMovement withMap:(PCMap *)map {
@@ -146,6 +146,8 @@
     }
     return NO;
 }
+
+
 
 -(void)turnRight {
     if (isTurningRight == 1) {
