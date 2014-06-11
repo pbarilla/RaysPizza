@@ -16,14 +16,24 @@
 		EB3A06E01948557500C23CA0 /* PCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A06DF1948557500C23CA0 /* PCAppDelegate.m */; };
 		EB3A06E31948557500C23CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3A06E11948557500C23CA0 /* Main.storyboard */; };
 		EB3A06E61948557500C23CA0 /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A06E51948557500C23CA0 /* PCViewController.m */; };
-		EB3A06E91948557500C23CA0 /* PCMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A06E81948557500C23CA0 /* PCMyScene.m */; };
-		EB3A06EB1948557500C23CA0 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3A06EA1948557500C23CA0 /* Spaceship.png */; };
 		EB3A06ED1948557500C23CA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3A06EC1948557500C23CA0 /* Images.xcassets */; };
 		EB3A06F41948557500C23CA0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A06F31948557500C23CA0 /* XCTest.framework */; };
 		EB3A06F51948557500C23CA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A06CD1948557400C23CA0 /* Foundation.framework */; };
 		EB3A06F61948557500C23CA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A06D11948557500C23CA0 /* UIKit.framework */; };
 		EB3A06FE1948557500C23CA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB3A06FC1948557500C23CA0 /* InfoPlist.strings */; };
 		EB3A07001948557500C23CA0 /* RaysPizzaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A06FF1948557500C23CA0 /* RaysPizzaTests.m */; };
+		EB3A070F1948561900C23CA0 /* PCEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A070A1948561900C23CA0 /* PCEngine.m */; };
+		EB3A07101948561900C23CA0 /* PCEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A070A1948561900C23CA0 /* PCEngine.m */; };
+		EB3A07111948561900C23CA0 /* PCMap.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A070C1948561900C23CA0 /* PCMap.m */; };
+		EB3A07121948561900C23CA0 /* PCMap.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A070C1948561900C23CA0 /* PCMap.m */; };
+		EB3A07131948561900C23CA0 /* PCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A070E1948561900C23CA0 /* PCPlayer.m */; };
+		EB3A07141948561900C23CA0 /* PCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A070E1948561900C23CA0 /* PCPlayer.m */; };
+		EB3A07171948568B00C23CA0 /* PCScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A07161948568B00C23CA0 /* PCScene.m */; };
+		EB3A07181948568B00C23CA0 /* PCScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A07161948568B00C23CA0 /* PCScene.m */; };
+		EB3A071A1948572900C23CA0 /* TestMap.pcmap in Resources */ = {isa = PBXBuildFile; fileRef = EB3A07191948572900C23CA0 /* TestMap.pcmap */; };
+		EB3A071B1948572900C23CA0 /* TestMap.pcmap in Resources */ = {isa = PBXBuildFile; fileRef = EB3A07191948572900C23CA0 /* TestMap.pcmap */; };
+		EB3A071D1948573000C23CA0 /* BigMap.pcmap in Resources */ = {isa = PBXBuildFile; fileRef = EB3A071C1948573000C23CA0 /* BigMap.pcmap */; };
+		EB3A071E1948573000C23CA0 /* BigMap.pcmap in Resources */ = {isa = PBXBuildFile; fileRef = EB3A071C1948573000C23CA0 /* BigMap.pcmap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,15 +61,22 @@
 		EB3A06E21948557500C23CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB3A06E41948557500C23CA0 /* PCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
 		EB3A06E51948557500C23CA0 /* PCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
-		EB3A06E71948557500C23CA0 /* PCMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMyScene.h; sourceTree = "<group>"; };
-		EB3A06E81948557500C23CA0 /* PCMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCMyScene.m; sourceTree = "<group>"; };
-		EB3A06EA1948557500C23CA0 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		EB3A06EC1948557500C23CA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EB3A06F21948557500C23CA0 /* RaysPizzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaysPizzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3A06F31948557500C23CA0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EB3A06FB1948557500C23CA0 /* RaysPizzaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaysPizzaTests-Info.plist"; sourceTree = "<group>"; };
 		EB3A06FD1948557500C23CA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB3A06FF1948557500C23CA0 /* RaysPizzaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaysPizzaTests.m; sourceTree = "<group>"; };
+		EB3A07091948561900C23CA0 /* PCEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCEngine.h; sourceTree = "<group>"; };
+		EB3A070A1948561900C23CA0 /* PCEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCEngine.m; sourceTree = "<group>"; };
+		EB3A070B1948561900C23CA0 /* PCMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMap.h; sourceTree = "<group>"; };
+		EB3A070C1948561900C23CA0 /* PCMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMap.m; sourceTree = "<group>"; };
+		EB3A070D1948561900C23CA0 /* PCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPlayer.h; sourceTree = "<group>"; };
+		EB3A070E1948561900C23CA0 /* PCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPlayer.m; sourceTree = "<group>"; };
+		EB3A07151948568B00C23CA0 /* PCScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCScene.h; sourceTree = "<group>"; };
+		EB3A07161948568B00C23CA0 /* PCScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCScene.m; sourceTree = "<group>"; };
+		EB3A07191948572900C23CA0 /* TestMap.pcmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestMap.pcmap; sourceTree = "<group>"; };
+		EB3A071C1948573000C23CA0 /* BigMap.pcmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BigMap.pcmap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,14 +138,19 @@
 		EB3A06D51948557500C23CA0 /* RaysPizza */ = {
 			isa = PBXGroup;
 			children = (
+				EB3A07091948561900C23CA0 /* PCEngine.h */,
+				EB3A070A1948561900C23CA0 /* PCEngine.m */,
+				EB3A070B1948561900C23CA0 /* PCMap.h */,
+				EB3A070C1948561900C23CA0 /* PCMap.m */,
+				EB3A070D1948561900C23CA0 /* PCPlayer.h */,
+				EB3A070E1948561900C23CA0 /* PCPlayer.m */,
 				EB3A06DE1948557500C23CA0 /* PCAppDelegate.h */,
 				EB3A06DF1948557500C23CA0 /* PCAppDelegate.m */,
-				EB3A06E11948557500C23CA0 /* Main.storyboard */,
+				EB3A07151948568B00C23CA0 /* PCScene.h */,
+				EB3A07161948568B00C23CA0 /* PCScene.m */,
 				EB3A06E41948557500C23CA0 /* PCViewController.h */,
 				EB3A06E51948557500C23CA0 /* PCViewController.m */,
-				EB3A06E71948557500C23CA0 /* PCMyScene.h */,
-				EB3A06E81948557500C23CA0 /* PCMyScene.m */,
-				EB3A06EA1948557500C23CA0 /* Spaceship.png */,
+				EB3A06E11948557500C23CA0 /* Main.storyboard */,
 				EB3A06EC1948557500C23CA0 /* Images.xcassets */,
 				EB3A06D61948557500C23CA0 /* Supporting Files */,
 			);
@@ -138,6 +160,8 @@
 		EB3A06D61948557500C23CA0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EB3A07191948572900C23CA0 /* TestMap.pcmap */,
+				EB3A071C1948573000C23CA0 /* BigMap.pcmap */,
 				EB3A06D71948557500C23CA0 /* RaysPizza-Info.plist */,
 				EB3A06D81948557500C23CA0 /* InfoPlist.strings */,
 				EB3A06DB1948557500C23CA0 /* main.m */,
@@ -243,7 +267,8 @@
 			files = (
 				EB3A06DA1948557500C23CA0 /* InfoPlist.strings in Resources */,
 				EB3A06ED1948557500C23CA0 /* Images.xcassets in Resources */,
-				EB3A06EB1948557500C23CA0 /* Spaceship.png in Resources */,
+				EB3A071D1948573000C23CA0 /* BigMap.pcmap in Resources */,
+				EB3A071A1948572900C23CA0 /* TestMap.pcmap in Resources */,
 				EB3A06E31948557500C23CA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +277,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3A071E1948573000C23CA0 /* BigMap.pcmap in Resources */,
+				EB3A071B1948572900C23CA0 /* TestMap.pcmap in Resources */,
 				EB3A06FE1948557500C23CA0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,9 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB3A06DC1948557500C23CA0 /* main.m in Sources */,
-				EB3A06E91948557500C23CA0 /* PCMyScene.m in Sources */,
+				EB3A07131948561900C23CA0 /* PCPlayer.m in Sources */,
 				EB3A06E61948557500C23CA0 /* PCViewController.m in Sources */,
+				EB3A070F1948561900C23CA0 /* PCEngine.m in Sources */,
 				EB3A06E01948557500C23CA0 /* PCAppDelegate.m in Sources */,
+				EB3A07111948561900C23CA0 /* PCMap.m in Sources */,
+				EB3A07171948568B00C23CA0 /* PCScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3A07121948561900C23CA0 /* PCMap.m in Sources */,
+				EB3A07141948561900C23CA0 /* PCPlayer.m in Sources */,
+				EB3A07101948561900C23CA0 /* PCEngine.m in Sources */,
+				EB3A07181948568B00C23CA0 /* PCScene.m in Sources */,
 				EB3A07001948557500C23CA0 /* RaysPizzaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

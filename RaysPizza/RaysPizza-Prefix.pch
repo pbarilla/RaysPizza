@@ -14,3 +14,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+// bounds for map
+#define mapWidth 15
+#define mapHeight 15
