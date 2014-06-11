@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PCMap.h"
 
 typedef enum {
     PlayerTurnLeft,
@@ -42,13 +43,7 @@ typedef enum {
 -(void)setPlayerDirection:(CGPoint)point;
 -(void)setPlayerPlane:(CGPoint)point;
 
-// Movement
-//-(void)turnRight;
-//-(void)turnLeft;
-//-(void)moveForward;
-//-(void)moveBackward;
-
--(void)setMovement:(int)PlayerMovement;
+-(void)setMovement:(int)PlayerMovement byValidatingWithMap:(PCMap *)map;
 -(void)invalidateMovement;
 -(void)pulseMovementControls;
 

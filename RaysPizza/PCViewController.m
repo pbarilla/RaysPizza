@@ -34,18 +34,18 @@
     
     if (touchLocation.x > 450) {
         // turn left
-        [self.player setMovement:PlayerTurnLeft];
+        [self.player setMovement:PlayerTurnLeft byValidatingWithMap:self.gameMap];
     } else if (touchLocation.x < 100) {
         // turn right
-        [self.player setMovement:PlayerTurnRight];
+        [self.player setMovement:PlayerTurnRight byValidatingWithMap:self.gameMap];
     }
     
     if (touchLocation.y < 100) {
         // move forward
-        [self.player setMovement:PlayerMoveForward];
+        [self.player setMovement:PlayerMoveForward byValidatingWithMap:self.gameMap];
     } else if (touchLocation.y > 200) {
         // move backwards
-        [self.player setMovement:PlayerMoveBackward];
+        [self.player setMovement:PlayerMoveBackward byValidatingWithMap:self.gameMap];
     }
 }
 

@@ -13,12 +13,9 @@
 @property (strong, nonatomic) NSMutableArray *worldMap;
 
 -(void)prepareMapArray;
--(void)setupTestMap;
--(int)checkMapX:(int)x andY:(int)y;
 -(void)setMapDataAtPoint:(CGPoint)point withInformation:(NSNumber *)information;
 -(void)loadMap:(NSString *)mapName;
 -(int)valueForPoint:(CGPoint)point;
-
 
 
 @end

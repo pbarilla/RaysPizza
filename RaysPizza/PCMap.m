@@ -23,7 +23,7 @@
     int maxArrayY = mapHeight;
     for (int i = 0; i <= maxArrayY; i++) {
         // fill the world map with zeroes.
-        NSMutableArray *xRow = [NSMutableArray arrayWithArray:@[@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0]];
+        NSMutableArray *xRow = [NSMutableArray arrayWithArray:@[@0]];
         [self.worldMap addObject:xRow];
     }
 }
