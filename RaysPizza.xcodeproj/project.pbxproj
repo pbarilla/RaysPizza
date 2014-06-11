@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB3A06CE1948557400C23CA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A06CD1948557400C23CA0 /* Foundation.framework */; };
+		EB3A06D01948557500C23CA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A06CF1948557500C23CA0 /* CoreGraphics.framework */; };
+		EB3A06D21948557500C23CA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A06D11948557500C23CA0 /* UIKit.framework */; };
+		EB3A06D41948557500C23CA0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A06D31948557500C23CA0 /* SpriteKit.framework */; };
+		EB3A06DA1948557500C23CA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB3A06D81948557500C23CA0 /* InfoPlist.strings */; };
+		EB3A06DC1948557500C23CA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A06DB1948557500C23CA0 /* main.m */; };
+		EB3A06E01948557500C23CA0 /* PCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A06DF1948557500C23CA0 /* PCAppDelegate.m */; };
+		EB3A06E31948557500C23CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3A06E11948557500C23CA0 /* Main.storyboard */; };
+		EB3A06E61948557500C23CA0 /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A06E51948557500C23CA0 /* PCViewController.m */; };
+		EB3A06E91948557500C23CA0 /* PCMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A06E81948557500C23CA0 /* PCMyScene.m */; };
+		EB3A06EB1948557500C23CA0 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3A06EA1948557500C23CA0 /* Spaceship.png */; };
+		EB3A06ED1948557500C23CA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3A06EC1948557500C23CA0 /* Images.xcassets */; };
+		EB3A06F41948557500C23CA0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A06F31948557500C23CA0 /* XCTest.framework */; };
+		EB3A06F51948557500C23CA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A06CD1948557400C23CA0 /* Foundation.framework */; };
+		EB3A06F61948557500C23CA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A06D11948557500C23CA0 /* UIKit.framework */; };
+		EB3A06FE1948557500C23CA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB3A06FC1948557500C23CA0 /* InfoPlist.strings */; };
+		EB3A07001948557500C23CA0 /* RaysPizzaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A06FF1948557500C23CA0 /* RaysPizzaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB3A06F71948557500C23CA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3A06C21948557400C23CA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3A06C91948557400C23CA0;
+			remoteInfo = RaysPizza;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB3A06CA1948557400C23CA0 /* RaysPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaysPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3A06CD1948557400C23CA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB3A06CF1948557500C23CA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB3A06D11948557500C23CA0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB3A06D31948557500C23CA0 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EB3A06D71948557500C23CA0 /* RaysPizza-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaysPizza-Info.plist"; sourceTree = "<group>"; };
+		EB3A06D91948557500C23CA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB3A06DB1948557500C23CA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB3A06DD1948557500C23CA0 /* RaysPizza-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaysPizza-Prefix.pch"; sourceTree = "<group>"; };
+		EB3A06DE1948557500C23CA0 /* PCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCAppDelegate.h; sourceTree = "<group>"; };
+		EB3A06DF1948557500C23CA0 /* PCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCAppDelegate.m; sourceTree = "<group>"; };
+		EB3A06E21948557500C23CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB3A06E41948557500C23CA0 /* PCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
+		EB3A06E51948557500C23CA0 /* PCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
+		EB3A06E71948557500C23CA0 /* PCMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMyScene.h; sourceTree = "<group>"; };
+		EB3A06E81948557500C23CA0 /* PCMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCMyScene.m; sourceTree = "<group>"; };
+		EB3A06EA1948557500C23CA0 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		EB3A06EC1948557500C23CA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB3A06F21948557500C23CA0 /* RaysPizzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaysPizzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3A06F31948557500C23CA0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EB3A06FB1948557500C23CA0 /* RaysPizzaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaysPizzaTests-Info.plist"; sourceTree = "<group>"; };
+		EB3A06FD1948557500C23CA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB3A06FF1948557500C23CA0 /* RaysPizzaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaysPizzaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB3A06C71948557400C23CA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3A06D01948557500C23CA0 /* CoreGraphics.framework in Frameworks */,
+				EB3A06D21948557500C23CA0 /* UIKit.framework in Frameworks */,
+				EB3A06D41948557500C23CA0 /* SpriteKit.framework in Frameworks */,
+				EB3A06CE1948557400C23CA0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3A06EF1948557500C23CA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3A06F41948557500C23CA0 /* XCTest.framework in Frameworks */,
+				EB3A06F61948557500C23CA0 /* UIKit.framework in Frameworks */,
+				EB3A06F51948557500C23CA0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB3A06C11948557400C23CA0 = {
+			isa = PBXGroup;
+			children = (
+				EB3A06D51948557500C23CA0 /* RaysPizza */,
+				EB3A06F91948557500C23CA0 /* RaysPizzaTests */,
+				EB3A06CC1948557400C23CA0 /* Frameworks */,
+				EB3A06CB1948557400C23CA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB3A06CB1948557400C23CA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A06CA1948557400C23CA0 /* RaysPizza.app */,
+				EB3A06F21948557500C23CA0 /* RaysPizzaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB3A06CC1948557400C23CA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A06CD1948557400C23CA0 /* Foundation.framework */,
+				EB3A06CF1948557500C23CA0 /* CoreGraphics.framework */,
+				EB3A06D11948557500C23CA0 /* UIKit.framework */,
+				EB3A06D31948557500C23CA0 /* SpriteKit.framework */,
+				EB3A06F31948557500C23CA0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB3A06D51948557500C23CA0 /* RaysPizza */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A06DE1948557500C23CA0 /* PCAppDelegate.h */,
+				EB3A06DF1948557500C23CA0 /* PCAppDelegate.m */,
+				EB3A06E11948557500C23CA0 /* Main.storyboard */,
+				EB3A06E41948557500C23CA0 /* PCViewController.h */,
+				EB3A06E51948557500C23CA0 /* PCViewController.m */,
+				EB3A06E71948557500C23CA0 /* PCMyScene.h */,
+				EB3A06E81948557500C23CA0 /* PCMyScene.m */,
+				EB3A06EA1948557500C23CA0 /* Spaceship.png */,
+				EB3A06EC1948557500C23CA0 /* Images.xcassets */,
+				EB3A06D61948557500C23CA0 /* Supporting Files */,
+			);
+			path = RaysPizza;
+			sourceTree = "<group>";
+		};
+		EB3A06D61948557500C23CA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A06D71948557500C23CA0 /* RaysPizza-Info.plist */,
+				EB3A06D81948557500C23CA0 /* InfoPlist.strings */,
+				EB3A06DB1948557500C23CA0 /* main.m */,
+				EB3A06DD1948557500C23CA0 /* RaysPizza-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB3A06F91948557500C23CA0 /* RaysPizzaTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A06FF1948557500C23CA0 /* RaysPizzaTests.m */,
+				EB3A06FA1948557500C23CA0 /* Supporting Files */,
+			);
+			path = RaysPizzaTests;
+			sourceTree = "<group>";
+		};
+		EB3A06FA1948557500C23CA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A06FB1948557500C23CA0 /* RaysPizzaTests-Info.plist */,
+				EB3A06FC1948557500C23CA0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB3A06C91948557400C23CA0 /* RaysPizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3A07031948557500C23CA0 /* Build configuration list for PBXNativeTarget "RaysPizza" */;
+			buildPhases = (
+				EB3A06C61948557400C23CA0 /* Sources */,
+				EB3A06C71948557400C23CA0 /* Frameworks */,
+				EB3A06C81948557400C23CA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaysPizza;
+			productName = RaysPizza;
+			productReference = EB3A06CA1948557400C23CA0 /* RaysPizza.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB3A06F11948557500C23CA0 /* RaysPizzaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3A07061948557500C23CA0 /* Build configuration list for PBXNativeTarget "RaysPizzaTests" */;
+			buildPhases = (
+				EB3A06EE1948557500C23CA0 /* Sources */,
+				EB3A06EF1948557500C23CA0 /* Frameworks */,
+				EB3A06F01948557500C23CA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB3A06F81948557500C23CA0 /* PBXTargetDependency */,
+			);
+			name = RaysPizzaTests;
+			productName = RaysPizzaTests;
+			productReference = EB3A06F21948557500C23CA0 /* RaysPizzaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB3A06C21948557400C23CA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = pizzacat;
+				TargetAttributes = {
+					EB3A06F11948557500C23CA0 = {
+						TestTargetID = EB3A06C91948557400C23CA0;
+					};
+				};
+			};
+			buildConfigurationList = EB3A06C51948557400C23CA0 /* Build configuration list for PBXProject "RaysPizza" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB3A06C11948557400C23CA0;
+			productRefGroup = EB3A06CB1948557400C23CA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB3A06C91948557400C23CA0 /* RaysPizza */,
+				EB3A06F11948557500C23CA0 /* RaysPizzaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB3A06C81948557400C23CA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3A06DA1948557500C23CA0 /* InfoPlist.strings in Resources */,
+				EB3A06ED1948557500C23CA0 /* Images.xcassets in Resources */,
+				EB3A06EB1948557500C23CA0 /* Spaceship.png in Resources */,
+				EB3A06E31948557500C23CA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3A06F01948557500C23CA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3A06FE1948557500C23CA0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB3A06C61948557400C23CA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3A06DC1948557500C23CA0 /* main.m in Sources */,
+				EB3A06E91948557500C23CA0 /* PCMyScene.m in Sources */,
+				EB3A06E61948557500C23CA0 /* PCViewController.m in Sources */,
+				EB3A06E01948557500C23CA0 /* PCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3A06EE1948557500C23CA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3A07001948557500C23CA0 /* RaysPizzaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB3A06F81948557500C23CA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB3A06C91948557400C23CA0 /* RaysPizza */;
+			targetProxy = EB3A06F71948557500C23CA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB3A06D81948557500C23CA0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3A06D91948557500C23CA0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB3A06E11948557500C23CA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3A06E21948557500C23CA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB3A06FC1948557500C23CA0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3A06FD1948557500C23CA0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB3A07011948557500C23CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB3A07021948557500C23CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB3A07041948557500C23CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaysPizza/RaysPizza-Prefix.pch";
+				INFOPLIST_FILE = "RaysPizza/RaysPizza-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB3A07051948557500C23CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaysPizza/RaysPizza-Prefix.pch";
+				INFOPLIST_FILE = "RaysPizza/RaysPizza-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EB3A07071948557500C23CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RaysPizza.app/RaysPizza";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaysPizza/RaysPizza-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RaysPizzaTests/RaysPizzaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EB3A07081948557500C23CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RaysPizza.app/RaysPizza";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaysPizza/RaysPizza-Prefix.pch";
+				INFOPLIST_FILE = "RaysPizzaTests/RaysPizzaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB3A06C51948557400C23CA0 /* Build configuration list for PBXProject "RaysPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3A07011948557500C23CA0 /* Debug */,
+				EB3A07021948557500C23CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3A07031948557500C23CA0 /* Build configuration list for PBXNativeTarget "RaysPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3A07041948557500C23CA0 /* Debug */,
+				EB3A07051948557500C23CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB3A07061948557500C23CA0 /* Build configuration list for PBXNativeTarget "RaysPizzaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3A07071948557500C23CA0 /* Debug */,
+				EB3A07081948557500C23CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB3A06C21948557400C23CA0 /* Project object */;
+}
