@@ -1,7 +1,7 @@
 RaysPizza
 =========
 
-A (very basic) raycasting engine for iOS
+A (very basic) raycasting engine for iOS. RAYcasting. RaysPizza. Pizza cat. Get it? (At least I thought it was clever)
 It uses SpriteKit to draw line segments. For not, at least. 
 
 ###working
