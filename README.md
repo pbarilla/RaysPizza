@@ -3,9 +3,9 @@ RaysPizza
 
 A (very basic) raycasting engine for iOS
 
-**working
+###working
 - not much
 
 
-**not working
+###not working
 - most everything
