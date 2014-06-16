@@ -42,6 +42,8 @@ typedef enum {
     double rotSpeed;
 }
 
+@property (strong, nonatomic) PCMap *currentMap;
+
 -(id)initAsPlayer:(int)playerConfiguration;
 
 // Vector getters

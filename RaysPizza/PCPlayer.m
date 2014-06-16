@@ -61,6 +61,11 @@
 }
 
 -(void)setMovement:(int)PlayerMovement byValidatingWithMap:(PCMap *)map{
+    // the problem here is the map must be immutable, aka cannot change.
+    if (!_currentMap) {
+        _currentMap = map;
+    }
+    
     switch (PlayerMovement) {
             
         case PlayerTurnLeft: {
@@ -141,17 +146,70 @@
 -(void)moveForward {
     if (isMovingForward == 1) {
         // increase the last number to increase the movement speed
-        position.x += direction.x * moveSpeed;
-        position.y += direction.y * moveSpeed;
+        
+        if ([self willNotCollideGoingForwardXCoord]) {
+            position.x += direction.x * moveSpeed;
+        }
+        if ([self willNotCollideGoingForwardYCoord]) {
+            position.y += direction.y * moveSpeed;
+        }
     }
 }
 
 -(void)moveBackward {
     if (isMovingBackward == 1) {
         // increase the last number to increase the movement speed
-        position.x -= direction.x * moveSpeed;
-        position.y -= direction.y * moveSpeed;
+        if ([self willNotCollideGoingBackwardXCoord]) {
+            position.x -= direction.x * moveSpeed;
+        }
+        if ([self willNotCollideGoingBackwardYCoord]) {
+            position.y -= direction.y * moveSpeed;
+        }
     }
+}
+
+-(BOOL)willNotCollideGoingForwardXCoord {
+    // NO = will collide
+    // YES = will not collide (aka OKAY to move)
+    CGPoint testForwardX = CGPointMake(position.x + direction.x * moveSpeed, position.y);
+    int potentialPosition = [self.currentMap valueForPoint:testForwardX];
+    if (potentialPosition == 0) {
+        return YES;
+    }
+    return NO;
+}
+
+-(BOOL)willNotCollideGoingForwardYCoord {
+    // NO = will collide
+    // YES = will not collide (aka OKAY to move)
+    CGPoint testForwardY = CGPointMake(position.x, position.y + direction.y * moveSpeed);
+    int potentialPosition = [self.currentMap valueForPoint:testForwardY];
+    if (potentialPosition == 0) {
+        return YES;
+    }
+    return NO;
+}
+
+-(BOOL)willNotCollideGoingBackwardXCoord {
+    // NO = will collide
+    // YES = will not collide (aka OKAY to move)
+    CGPoint testBackwardX = CGPointMake(position.x - direction.x * moveSpeed, position.y);
+    int potentialPosition = [self.currentMap valueForPoint:testBackwardX];
+    if (potentialPosition == 0) {
+        return YES;
+    }
+    return NO;
+}
+
+-(BOOL)willNotCollideGoingBackwardYCoord {
+    // NO = will collide
+    // YES = will not collide (aka OKAY to move)
+    CGPoint testBackwardY = CGPointMake(position.x, position.y - direction.y * moveSpeed);
+    int potentialPosition = [self.currentMap valueForPoint:testBackwardY];
+    if (potentialPosition == 0) {
+        return YES;
+    }
+    return NO;
 }
 
 -(CGPoint)getPlayerPosition {
@@ -165,13 +223,13 @@
 }
 
 -(void)setPlayerPosition:(CGPoint)point {
-    
+    position = point;
 }
 -(void)setPlayerDirection:(CGPoint)point {
-    
+    direction = point;
 }
 -(void)setPlayerPlane:(CGPoint)point {
-    
+    plane = point;
 }
 
 
