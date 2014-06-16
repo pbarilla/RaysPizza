@@ -16,6 +16,15 @@ typedef enum {
     PlayerMoveBackward
 } PlayerMovement;
 
+// Player config 1 and 2 (and whatever) allows you to "choose a player" which has different
+// heights, movement speed, etc
+// (think ROTT, etc)
+typedef enum {
+    PlayerConfigurationOne,
+    PlayerConfigurationTwo
+} PlayerConfig;
+
+
 @interface PCPlayer : NSObject {
     // Player Movement
     BOOL isMovingForward;
@@ -32,6 +41,8 @@ typedef enum {
     double moveSpeed;
     double rotSpeed;
 }
+
+-(id)initAsPlayer:(int)playerConfiguration;
 
 // Vector getters
 -(CGPoint)getPlayerPosition;

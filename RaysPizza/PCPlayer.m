@@ -16,10 +16,32 @@
         position = CGPointMake(5, 5);
         direction = CGPointMake(-1, 0);
         plane = CGPointMake(0, 0.66);
-        moveSpeed = 0.3 * 5.0;
+        moveSpeed = 0.001;
         rotSpeed = 0.0002 * 3.0;
         
         [self invalidateMovement];
+    }
+    return self;
+}
+
+// impliment this correctly herp derp
+-(id)initAsPlayer:(int)playerConfiguration {
+    self = [super init];
+    if (self) {
+        // set unique configurations for player based on configuration
+        switch (playerConfiguration) {
+            case PlayerConfigurationOne: {
+                // do something
+                break;
+            }
+            case PlayerConfigurationTwo: {
+                // do something
+                break;
+            }
+            default: {
+                break;
+            }
+        }
     }
     return self;
 }
@@ -40,114 +62,57 @@
 
 -(void)setMovement:(int)PlayerMovement byValidatingWithMap:(PCMap *)map{
     switch (PlayerMovement) {
+            
         case PlayerTurnLeft: {
-            isTurningLeft = 1;
-            isTurningRight = 0;
+            [self makePlayerTurnLeft];
             break;
         }
+            
         case PlayerTurnRight: {
-            isTurningRight = 1;
-            isTurningLeft = 0;
+            [self makePlayerTurnRight];
             break;
         }
+            
         case PlayerMoveForward: {
-            if ([self checkForCollisonMoving:PlayerMoveForward withMap:map]) {
-                isMovingForward = 1;
-                isMovingBackward = 0;
-                isTurningLeft = 0;
-                isTurningRight = 0;
-            } else {
-                isMovingForward = 0;
-                isMovingBackward = 0;
-                isTurningLeft = 0;
-                isTurningRight = 0;
-            }
-            
+            [self makePlayerMoveForward];
             break;
         }
+            
         case PlayerMoveBackward: {
-            if ([self checkForCollisonMoving:PlayerMoveBackward withMap:map]) {
-                isMovingForward = 0;
-                isMovingBackward = 1;
-                isTurningLeft = 0;
-                isTurningRight = 0;
-            } else {
-                isMovingForward = 0;
-                isMovingBackward = 0;
-                isTurningLeft = 0;
-                isTurningRight = 0;
-            }
-            
+            [self makePlayerMoveBackward];
             break;
         }
+            
         default: {
             break;
         }
+            
     }
 }
 
-/**
- doesnt quite work yet
- 
- say the map runs like this:
- 
- 1 1 1 1 1
- 1       1
- 1       1
- 1       1
- 1 *     1
- 
- where * is our player. If they are running along side the wall at a slight angle, then eventually they will 
- overlap the wall like so:
- 
- 1      1       1
- 1      1       1
- 1  *   1*      *
- 
- When that happens, it crashes because of course it will crash. 
- so we need to check the positions north, south, east and west of the player before allowing the player to move, and
- probably check NE, SE, NW, SW also
- 
- NW NO NE       to do this we should take the map, and move the player direction as follows.
- WE ** EA       ** = (5,5), NO = (5,4), NE = (6,4), EA = (6,5), SE = (6, 6), SO = (5,6), SW = (4,6), WE = (4,5), NW = (4,4)
- SW SO SE
- 
-**/
-
--(BOOL)checkForCollisonMoving:(int)PlayerMovement withMap:(PCMap *)map {
-    switch (PlayerMovement) {
-        case PlayerMoveForward: {
-            CGPoint potentialNewPosition = CGPointMake(position.x, position.y);
-            potentialNewPosition.x += direction.x * 2;
-            potentialNewPosition.y += direction.y * 2;
-            
-            int testMap = [map valueForPoint:potentialNewPosition];
-            if (testMap == 0) {
-                return YES;
-            } else {
-                return NO;
-            }
-            
-            break;
-        }
-        case PlayerMoveBackward: {
-            CGPoint potentialNewPosition = CGPointMake(position.x, position.y);
-            potentialNewPosition.x -= direction.x * 2;
-            potentialNewPosition.y -= direction.y * 2;
-            
-            int testMap = [map valueForPoint:potentialNewPosition];
-            if (testMap == 0) {
-                return YES;
-            } else {
-                return NO;
-            }
-            break;
-        }
-    }
-    return NO;
+-(void)makePlayerTurnLeft {
+    isTurningLeft = 1;
+    isTurningRight = 0;
 }
 
+-(void)makePlayerTurnRight {
+    isTurningRight = 1;
+    isTurningLeft = 0;
+}
 
+-(void)makePlayerMoveForward {
+    isMovingForward = 1;
+    isMovingBackward = 0;
+    isTurningLeft = 0;
+    isTurningRight = 0;
+}
+
+-(void)makePlayerMoveBackward {
+    isMovingForward = 0;
+    isMovingBackward = 1;
+    isTurningLeft = 0;
+    isTurningRight = 0;
+}
 
 -(void)turnRight {
     if (isTurningRight == 1) {
@@ -176,16 +141,16 @@
 -(void)moveForward {
     if (isMovingForward == 1) {
         // increase the last number to increase the movement speed
-        position.x += direction.x * 0.001;
-        position.y += direction.y * 0.001;
+        position.x += direction.x * moveSpeed;
+        position.y += direction.y * moveSpeed;
     }
 }
 
 -(void)moveBackward {
     if (isMovingBackward == 1) {
         // increase the last number to increase the movement speed
-        position.x -= direction.x * 0.001;
-        position.y -= direction.y * 0.001;
+        position.x -= direction.x * moveSpeed;
+        position.y -= direction.y * moveSpeed;
     }
 }
 
