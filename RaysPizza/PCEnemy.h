@@ -82,11 +82,15 @@ typedef enum {
 // change state to something
 -(void)setState:(int)EnemyState;
 
+-(void)setStartingLocation:(CGPoint)startingLocation;
+-(void)setSpawnTimer:(float)timeToSpawn;
+
 // if hearing of visual return something, then the state changes.
 -(BOOL)checkHearing;
 -(BOOL)checkVisual;
 
--(void)
+// all about tracking and tracing and blah
+-(CGPoint)findTarget;
 
 
 
