@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) NSMutableArray *worldMap;
 
++(PCMap*)sharedInstance;
+
 -(void)prepareMapArray;
 -(void)setMapDataAtPoint:(CGPoint)point withInformation:(NSNumber *)information;
 -(void)loadMap:(NSString *)mapName;

@@ -34,18 +34,18 @@
     
     if (touchLocation.x > 450) {
         // turn left
-        [self.player setMovement:PlayerTurnLeft byValidatingWithMap:self.gameMap];
+        [self.player setMovement:PlayerTurnLeft]; // byValidatingWithMap:self.gameMap];
     } else if (touchLocation.x < 100) {
         // turn right
-        [self.player setMovement:PlayerTurnRight byValidatingWithMap:self.gameMap];
+        [self.player setMovement:PlayerTurnRight]; //byValidatingWithMap:self.gameMap];
     }
     
     if (touchLocation.y < 100) {
         // move forward
-        [self.player setMovement:PlayerMoveForward byValidatingWithMap:self.gameMap];
+        [self.player setMovement:PlayerMoveForward]; //byValidatingWithMap:self.gameMap];
     } else if (touchLocation.y > 200) {
         // move backwards
-        [self.player setMovement:PlayerMoveBackward byValidatingWithMap:self.gameMap];
+        [self.player setMovement:PlayerMoveBackward]; //byValidatingWithMap:self.gameMap];
     }
 }
 
@@ -77,8 +77,7 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    _gameMap = [[PCMap alloc]init];
-    [self.gameMap loadMap:@"TestMap"];
+    [[PCMap sharedInstance] loadMap:@"TestMap"];
     _player = [[PCPlayer alloc]init];
 }
 
@@ -156,7 +155,7 @@
                 side = 1;
             }
             // check if ray has hit wall
-            if ([self.gameMap valueForPoint:CGPointMake(mapX, mapY)] > 0) hit = 1;
+            if ([[PCMap sharedInstance] valueForPoint:CGPointMake(mapX, mapY)] > 0) hit = 1;
         }
         
         // calculate distance projected on camera direction (oblique distance will give fisheye effect
@@ -179,7 +178,7 @@
         }
         
         // get wall color
-        UIColor *wallColor = [self getColorForWall:[self.gameMap valueForPoint:CGPointMake(mapX, mapY)]];
+        UIColor *wallColor = [self getColorForWall:[[PCMap sharedInstance] valueForPoint:CGPointMake(mapX, mapY)]];
         
         // give x and y sides different brightness
         if (side == 1) {

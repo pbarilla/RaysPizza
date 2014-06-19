@@ -13,6 +13,5 @@
 @interface PCEngine : NSObject
 
 @property (strong, nonatomic) PCPlayer *player;
-@property (strong, nonatomic) PCMap *map;
 
 @end

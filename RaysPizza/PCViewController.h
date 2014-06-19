@@ -14,7 +14,6 @@
 
 @interface PCViewController : UIViewController
 
-@property (strong, nonatomic) PCMap *gameMap;
 @property (strong, nonatomic) PCPlayer *player;
 
 @end

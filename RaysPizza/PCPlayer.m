@@ -60,12 +60,42 @@
     [self moveForward];
 }
 
--(void)setMovement:(int)PlayerMovement byValidatingWithMap:(PCMap *)map{
-    // the problem here is the map must be immutable, aka cannot change.
-    if (!_currentMap) {
-        _currentMap = map;
-    }
-    
+//-(void)setMovement:(int)PlayerMovement byValidatingWithMap:(PCMap *)map{
+//    // the problem here is the map must be immutable, aka cannot change.
+////    if (!_currentMap) {
+////        _currentMap = map;
+////    }
+//    
+//    switch (PlayerMovement) {
+//            
+//        case PlayerTurnLeft: {
+//            [self makePlayerTurnLeft];
+//            break;
+//        }
+//            
+//        case PlayerTurnRight: {
+//            [self makePlayerTurnRight];
+//            break;
+//        }
+//            
+//        case PlayerMoveForward: {
+//            [self makePlayerMoveForward];
+//            break;
+//        }
+//            
+//        case PlayerMoveBackward: {
+//            [self makePlayerMoveBackward];
+//            break;
+//        }
+//            
+//        default: {
+//            break;
+//        }
+//            
+//    }
+//}
+
+-(void)setMovement:(int)PlayerMovement {
     switch (PlayerMovement) {
             
         case PlayerTurnLeft: {
@@ -91,7 +121,6 @@
         default: {
             break;
         }
-            
     }
 }
 
@@ -172,7 +201,7 @@
     // NO = will collide
     // YES = will not collide (aka OKAY to move)
     CGPoint testForwardX = CGPointMake(position.x + direction.x * moveSpeed, position.y);
-    int potentialPosition = [self.currentMap valueForPoint:testForwardX];
+    int potentialPosition = [[PCMap sharedInstance] valueForPoint:testForwardX];
     if (potentialPosition == 0) {
         return YES;
     }
@@ -183,7 +212,7 @@
     // NO = will collide
     // YES = will not collide (aka OKAY to move)
     CGPoint testForwardY = CGPointMake(position.x, position.y + direction.y * moveSpeed);
-    int potentialPosition = [self.currentMap valueForPoint:testForwardY];
+    int potentialPosition = [[PCMap sharedInstance] valueForPoint:testForwardY];
     if (potentialPosition == 0) {
         return YES;
     }
@@ -194,7 +223,7 @@
     // NO = will collide
     // YES = will not collide (aka OKAY to move)
     CGPoint testBackwardX = CGPointMake(position.x - direction.x * moveSpeed, position.y);
-    int potentialPosition = [self.currentMap valueForPoint:testBackwardX];
+    int potentialPosition = [[PCMap sharedInstance] valueForPoint:testBackwardX];
     if (potentialPosition == 0) {
         return YES;
     }
@@ -205,7 +234,7 @@
     // NO = will collide
     // YES = will not collide (aka OKAY to move)
     CGPoint testBackwardY = CGPointMake(position.x, position.y - direction.y * moveSpeed);
-    int potentialPosition = [self.currentMap valueForPoint:testBackwardY];
+    int potentialPosition = [[PCMap sharedInstance] valueForPoint:testBackwardY];
     if (potentialPosition == 0) {
         return YES;
     }

@@ -42,7 +42,7 @@ typedef enum {
     double rotSpeed;
 }
 
-@property (strong, nonatomic) PCMap *currentMap;
+//@property (strong, nonatomic) PCMap *currentMap;
 
 -(id)initAsPlayer:(int)playerConfiguration;
 
@@ -56,7 +56,8 @@ typedef enum {
 -(void)setPlayerDirection:(CGPoint)point;
 -(void)setPlayerPlane:(CGPoint)point;
 
--(void)setMovement:(int)PlayerMovement byValidatingWithMap:(PCMap *)map;
+//-(void)setMovement:(int)PlayerMovement byValidatingWithMap:(PCMap *)map;
+-(void)setMovement:(int)PlayerMovement;
 -(void)invalidateMovement;
 -(void)pulseMovementControls;
 
