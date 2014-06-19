@@ -11,6 +11,8 @@
 @interface PCMap : NSObject
 
 @property (strong, nonatomic) NSMutableArray *worldMap;
+@property (strong, nonatomic) NSMutableArray *itemMap;
+@property (strong, nonatomic) NSMutableArray *enemyMap;
 
 +(PCMap*)sharedInstance;
 
@@ -18,6 +20,8 @@
 -(void)setMapDataAtPoint:(CGPoint)point withInformation:(NSNumber *)information;
 -(void)loadMap:(NSString *)mapName;
 -(int)valueForPoint:(CGPoint)point;
+
+-(BOOL)setEnemyLocation:(CGPoint)enemyLocation forEnemy:(int)enemy;
 
 
 @end

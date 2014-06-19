@@ -28,6 +28,7 @@
 
 -(void)setStartingLocation:(CGPoint)startingLocation {
     currentPosition = startingLocation;
+    [[PCMap sharedInstance]setEnemyLocation:currentPosition forEnemy:currentClass];
 }
 
 -(BOOL)checkHearing {

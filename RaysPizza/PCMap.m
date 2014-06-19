@@ -14,25 +14,31 @@
     self = [super init];
     if (self) {
         _worldMap = [[NSMutableArray alloc]init];
+        _enemyMap = [[NSMutableArray alloc]init];
+        _itemMap = [[NSMutableArray alloc]init];
         [self prepareMapArray];
     }
     return self;
 }
 
+-(BOOL)setEnemyLocation:(CGPoint)enemyLocation forEnemy:(int)enemy {
+    int pointX = enemyLocation.x;
+    int pointY = enemyLocation.y;
+    NSMutableArray *xRow = [self.enemyMap objectAtIndex:pointY];
+    [xRow replaceObjectAtIndex:pointX withObject:[NSNumber numberWithInt:enemy]];
+    
+    // eventually this can return NO if the placement is in error. 
+    return YES;
+}
+
+
 + (id)sharedInstance
 {
-    // structure used to test whether the block has completed or not
     static dispatch_once_t p = 0;
-    
-    // initialize sharedObject as nil (first call only)
     __strong static id _sharedObject = nil;
-    
-    // executes a block object once and only once for the lifetime of an application
     dispatch_once(&p, ^{
         _sharedObject = [[self alloc] init];
     });
-    
-    // returns the same object each time
     return _sharedObject;
 }
 
