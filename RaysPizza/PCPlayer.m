@@ -60,41 +60,6 @@
     [self moveForward];
 }
 
-//-(void)setMovement:(int)PlayerMovement byValidatingWithMap:(PCMap *)map{
-//    // the problem here is the map must be immutable, aka cannot change.
-////    if (!_currentMap) {
-////        _currentMap = map;
-////    }
-//    
-//    switch (PlayerMovement) {
-//            
-//        case PlayerTurnLeft: {
-//            [self makePlayerTurnLeft];
-//            break;
-//        }
-//            
-//        case PlayerTurnRight: {
-//            [self makePlayerTurnRight];
-//            break;
-//        }
-//            
-//        case PlayerMoveForward: {
-//            [self makePlayerMoveForward];
-//            break;
-//        }
-//            
-//        case PlayerMoveBackward: {
-//            [self makePlayerMoveBackward];
-//            break;
-//        }
-//            
-//        default: {
-//            break;
-//        }
-//            
-//    }
-//}
-
 -(void)setMovement:(int)PlayerMovement {
     switch (PlayerMovement) {
             
@@ -102,22 +67,18 @@
             [self makePlayerTurnLeft];
             break;
         }
-            
         case PlayerTurnRight: {
             [self makePlayerTurnRight];
             break;
         }
-            
         case PlayerMoveForward: {
             [self makePlayerMoveForward];
             break;
         }
-            
         case PlayerMoveBackward: {
             [self makePlayerMoveBackward];
             break;
         }
-            
         default: {
             break;
         }
@@ -175,7 +136,6 @@
 -(void)moveForward {
     if (isMovingForward == 1) {
         // increase the last number to increase the movement speed
-        
         if ([self willNotCollideGoingForwardXCoord]) {
             position.x += direction.x * moveSpeed;
         }
