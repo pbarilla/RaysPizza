@@ -1,9 +1,9 @@
 //
 //  PCMap.h
-//  LetsTryThisAgain
+//  RaysPizza
 //
-//  Created by pat on 9/06/2014.
-//  Copyright (c) 2014 pizzacat. All rights reserved.
+//  Created by Pat on 9/06/2014.
+//  LMAO do whatever you want. 
 //
 
 #import <Foundation/Foundation.h>
@@ -22,6 +22,5 @@
 -(int)valueForPoint:(CGPoint)point;
 
 -(BOOL)setEnemyLocation:(CGPoint)enemyLocation forEnemy:(int)enemy;
-
 
 @end

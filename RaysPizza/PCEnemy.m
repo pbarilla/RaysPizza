@@ -2,8 +2,8 @@
 //  PCEnemy.m
 //  RaysPizza
 //
-//  Created by pat-keynected on 17/06/2014.
-//  Copyright (c) 2014 pizzacat. All rights reserved.
+//  Created by Pat on 17/06/2014.
+//  LMAO do whatever you want. 
 //
 
 #import "PCEnemy.h"

@@ -1,9 +1,9 @@
 //
 //  PCMap.m
-//  LetsTryThisAgain
+//  RaysPizza
 //
-//  Created by pat on 9/06/2014.
-//  Copyright (c) 2014 pizzacat. All rights reserved.
+//  Created by Pat on 9/06/2014.
+//  LMAO do whatever you want. 
 //
 
 #import "PCMap.h"
@@ -31,9 +31,7 @@
     return YES;
 }
 
-
-+ (id)sharedInstance
-{
++ (id)sharedInstance {
     static dispatch_once_t p = 0;
     __strong static id _sharedObject = nil;
     dispatch_once(&p, ^{
@@ -83,7 +81,6 @@
         [self.worldMap replaceObjectAtIndex:counter withObject:mutNewArray];
         counter++;
     }
-    
 }
 
 @end

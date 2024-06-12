@@ -2,8 +2,8 @@
 //  PCAppDelegate.h
 //  RaysPizza
 //
-//  Created by pat on 11/06/2014.
-//  Copyright (c) 2014 pizzacat. All rights reserved.
+//  Created by Pat on 11/06/2014.
+//  LMAO do whatever you want. 
 //
 
 #import <UIKit/UIKit.h>

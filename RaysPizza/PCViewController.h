@@ -3,7 +3,7 @@
 //  RaysPizza
 //
 
-//  Copyright (c) 2014 pizzacat. All rights reserved.
+//  LMAO do whatever you want. 
 //
 
 #import <UIKit/UIKit.h>

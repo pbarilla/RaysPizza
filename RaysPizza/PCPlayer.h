@@ -1,9 +1,9 @@
 //
 //  PCPlayer.h
-//  Spritekit Raycaster
+//  RaysPizza
 //
-//  Created by pat-keynected on 11/06/2014.
-//  Copyright (c) 2014 pizzacat. All rights reserved.
+//  Created by Pat on 11/06/2014.
+//  LMAO do whatever you want.
 //
 
 #import <Foundation/Foundation.h>
@@ -24,7 +24,6 @@ typedef enum {
     PlayerConfigurationTwo
 } PlayerConfig;
 
-
 @interface PCPlayer : NSObject {
     // Player Movement
     BOOL isMovingForward;
@@ -42,8 +41,6 @@ typedef enum {
     double rotSpeed;
 }
 
-//@property (strong, nonatomic) PCMap *currentMap;
-
 -(id)initAsPlayer:(int)playerConfiguration;
 
 // Vector getters
@@ -55,8 +52,6 @@ typedef enum {
 -(void)setPlayerPosition:(CGPoint)point;
 -(void)setPlayerDirection:(CGPoint)point;
 -(void)setPlayerPlane:(CGPoint)point;
-
-//-(void)setMovement:(int)PlayerMovement byValidatingWithMap:(PCMap *)map;
 -(void)setMovement:(int)PlayerMovement;
 -(void)invalidateMovement;
 -(void)pulseMovementControls;

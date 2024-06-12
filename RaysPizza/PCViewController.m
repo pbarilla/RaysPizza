@@ -2,11 +2,17 @@
 //  PCViewController.m
 //  RaysPizza
 //
-//  Created by pat on 11/06/2014.
-//  Copyright (c) 2014 pizzacat. All rights reserved.
+//  Created by Pat on 11/06/2014.
+//  LMAO do whatever you want. 
 //
 
 #import "PCViewController.h"
+
+@interface PCViewController()
+
+@property CGRect screenDimensions;
+
+@end
 
 @implementation PCViewController
 
@@ -14,6 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _screenDimensions = [UIScreen mainScreen].bounds;
     
     // SpriteKit
     SKView *spriteView = (SKView *)self.view;
@@ -34,18 +42,18 @@
     
     if (touchLocation.x > 450) {
         // turn left
-        [self.player setMovement:PlayerTurnLeft]; // byValidatingWithMap:self.gameMap];
+        [self.player setMovement:PlayerTurnLeft];
     } else if (touchLocation.x < 100) {
         // turn right
-        [self.player setMovement:PlayerTurnRight]; //byValidatingWithMap:self.gameMap];
+        [self.player setMovement:PlayerTurnRight];
     }
     
     if (touchLocation.y < 100) {
         // move forward
-        [self.player setMovement:PlayerMoveForward]; //byValidatingWithMap:self.gameMap];
+        [self.player setMovement:PlayerMoveForward];
     } else if (touchLocation.y > 200) {
         // move backwards
-        [self.player setMovement:PlayerMoveBackward]; //byValidatingWithMap:self.gameMap];
+        [self.player setMovement:PlayerMoveBackward];
     }
 }
 
@@ -166,7 +174,7 @@
         }
         
         // calculate height of line to draw on screen
-        int lineHeight = abs((int)h / perpWallDist);
+        int lineHeight = fabs((int)h / perpWallDist);
         // calculate lowest and heighest pixel to fill in current strupe
         int drawStart = -lineHeight / 2 + h / 2;
         if (drawStart < 0) {
@@ -241,10 +249,10 @@
 }
 
 -(UIColor *)lightenWallColor:(UIColor *)wallColor {
-    float red;
-    float green;
-    float blue;
-    float alpha;
+    double red;
+    double green;
+    double blue;
+    double alpha;
     [wallColor getRed:&red green:&green blue:&blue alpha:&alpha];
     
     red = red / 2;
